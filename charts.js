@@ -90,11 +90,11 @@ function buildCharts(sample) {
 
     // 8. Create the trace for the bar chart. 
     var barTrace = [{
-      x: values,
+      x: values.slice(0,10).reverse(),
       y: yticks,
       type: "bar",
       orientation: "h",
-      text: labels 
+      text: labels.slice(0,10).reverse() 
     }      
     ];
     // 9. Create the layout for the bar chart. 
