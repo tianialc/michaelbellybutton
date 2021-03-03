@@ -97,6 +97,8 @@ function buildCharts(sample) {
       orientation: "h", 
     }      
     ];
+    console.log(values.slice(0,10).reverse())
+    console.leg(labels.slice(0,10).reverse())
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found"
